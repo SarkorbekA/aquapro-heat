@@ -16,7 +16,7 @@
             <div class="header-wrapper">
                 <div class="header__left">
                     <a href="./index.html" class="header-logo">
-                        <img src="images/svg/logo.svg" alt="logo">
+                        <img draggable="false" src="images/svg/logo.svg" alt="logo">
                     </a>
                     <p class="header__left-text">
                         Оптовые цены
@@ -99,8 +99,8 @@
                         </div>
                     </div>
 
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev swiper-button-prev1"></div>
+                    <div class="swiper-button-next swiper-button-next1"></div>
 
                 </div>
             </div>
@@ -158,17 +158,444 @@
                 </div>
             </div>
             <div class="main__bottom">
-                <button class="main__bottom-btn">Перейти в каталог</button>
-                <h6 class="main__bottom-box">
+                <button class="main__bottom-btn btn">
+                    <p class="btn-text">
+                        Перейти в каталог
+                    </p>
+                </button>
+                <div class="main__bottom-box">
                     <div class="main__bottom-img">
                         <img src="images/png/security.png" alt="security logo">
                     </div>
-                    <div class="main__bottom-text">Оплата при получении</div>
-                </h6>
+                    <h6 class="main__bottom-text">Оплата при получении</h6>
+                </div>
             </div>
         </div>
     </main>
 
+    <section class="about">
+        <div class="container">
+            <h2 class="about-title">
+                О компании
+            </h2>
+            <div class="about-wrapper">
+                <div class="about-features">
+                    <ul class="features__list">
+                        <li class="features__list-item">
+                            <h2 class="features__item-value">15</h2>
+                            <h4 class="features__item-title">лет на рынке</h4>
+                        </li>
+                        <li class="features__list-item">
+                            <h2 class="features__item-value">400+</h2>
+                            <h4 class="features__item-title">разновидностей </h4>
+                        </li>
+                        <li class="features__list-item">
+                            <h2 class="features__item-value">60+</h2>
+                            <h4 class="features__item-title">поставщиков</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__box">
+                    <div class="about__box-image">
+                        <img draggable="false" class="first" src="images/png/product.png" alt="product">
+                        <img draggable="false" class="second" src="images/png/product.png" alt="product">
+                    </div>
+                    <div class="about__box-bottom">
+                        <button class="about__box-btn btn">
+                            <p class="btn-text">
+                                Перейти в каталог
+                            </p>
+                        </button>
+                        <div class="about__box-box">
+                            <div class="about__box-img">
+                                <img src="images/png/security.png" alt="security logo">
+                            </div>
+                            <h6 class="about__box-text">Оплата при получении</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2 class="category-title">Каталог продукции</h2>
+        <div class="category-wrapper">
+            <div class="category-line"></div>
+            <div class="container">
+                <div class="category-subtitle">Радиаторы всех видом</div>
+                <div class="category-slider">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next2"></div>
+                        <div class="swiper-button-prev swiper-button-prev2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-wrapper">
+            <div class="category-line"></div>
+            <div class="container">
+                <div class="category-subtitle">Канализация</div>
+                <div class="category-slider">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next2"></div>
+                        <div class="swiper-button-prev swiper-button-prev2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-wrapper">
+            <div class="category-line"></div>
+            <div class="container">
+                <div class="category-subtitle">Категория</div>
+                <div class="category-slider">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__slide">
+                                    <div class="category__slide-img">
+                                        <img draggable="false" src="/images/png/item.png" alt="product">
+                                    </div>
+                                    <div class="category__slide-title">Радиатор стальной Тип 22 600*1200</div>
+                                    <div class="category__slide-line"></div>
+                                    <a href="#" class="category__link">
+                                        <div class="category__link-title">ПОДРОБНЕЕ</div>
+                                        <img src="images/svg/arrow.svg" alt="arrow" class="category__link-arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next2"></div>
+                        <div class="swiper-button-prev swiper-button-prev2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-box">
+                    <h3 class="footer-title">
+                        Затрудняетесь с выбором Комплектации?
+                    </h3>
+                    <div class="footer-subtitle">
+                        Позвоните нашему менеджеру напрямую и получите бесплатную консультацию по вашему вопросу!
+                    </div>
+                    <a href="#" class="footer__btn">
+                        <p class="footer__btn-text">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</p>
+                    </a>
+                </div>
+                <div class="footer-img">
+                    <img src="./images/png/footer_img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>

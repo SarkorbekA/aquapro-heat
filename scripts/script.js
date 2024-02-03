@@ -23,7 +23,7 @@
 // })
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.mySwiper', {
     loop: true,
 
     autoplay: {
@@ -31,8 +31,17 @@ const swiper = new Swiper('.swiper', {
         disableOnInteraction: false,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next1',
+        prevEl: '.swiper-button-prev1',
     },
 
+});
+
+var swiperCategory = new Swiper(".mySwiper2", {
+    navigation: {
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
 });
