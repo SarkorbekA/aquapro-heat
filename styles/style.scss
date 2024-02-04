@@ -414,6 +414,9 @@ body.active {
             width: 250px;
             height: 250px;
             z-index: 3;
+            @media (max-width: 1024px) {
+                display: none;
+            }
         }
         &-slide {
             user-select: none;

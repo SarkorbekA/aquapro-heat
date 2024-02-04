@@ -445,6 +445,11 @@ body.active {
   height: 250px;
   z-index: 3;
 }
+@media (max-width: 1024px) {
+  .header .swiper::before {
+    display: none;
+  }
+}
 .header .swiper-slide {
   -webkit-user-select: none;
      -moz-user-select: none;
