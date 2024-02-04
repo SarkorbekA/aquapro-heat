@@ -895,6 +895,8 @@ body.active {
 }
 
 .category {
+  position: relative;
+  z-index: 3;
   padding-bottom: 50px;
   overflow-x: hidden;
 }
@@ -1086,24 +1088,64 @@ body.active {
 }
 
 .footer {
+  position: relative;
+  z-index: 2;
   background-color: #121212;
   padding: 120px 0;
+}
+@media (max-width: 480px) {
+  .footer {
+    padding-bottom: 60px;
+  }
 }
 .footer-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 992px) {
+  .footer-wrapper {
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+}
 .footer-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 550px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 992px) {
+  .footer-box {
+    align-items: center;
+  }
 }
 .footer-title {
   color: var(--white);
   font-size: 45px;
   font-weight: 200;
+}
+@media (max-width: 992px) {
+  .footer-title {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer-title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 360px) {
+  .footer-title {
+    font-size: 24px;
+  }
 }
 .footer-subtitle {
   color: var(--white);
@@ -1112,6 +1154,22 @@ body.active {
   line-height: 28px;
   margin-top: 25px;
   max-width: 400px;
+}
+@media (max-width: 992px) {
+  .footer-subtitle {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer-subtitle {
+    font-size: 14px;
+    margin-top: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-subtitle {
+    font-size: 12px;
+  }
 }
 .footer__btn {
   margin-top: 65px;
@@ -1150,9 +1208,30 @@ body.active {
   z-index: 1;
   background: linear-gradient(64.11deg, #e1ba6f 80%, #fff6d6 100%);
 }
+@media (max-width: 768px) {
+  .footer__btn {
+    max-width: 300px;
+    padding: 24px 0;
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__btn {
+    padding: 18px 0;
+    max-width: 250px;
+    font-size: 11px;
+  }
+}
 .footer-img {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   position: relative;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .footer-img {
+    max-width: 280px;
+  }
 }
 .footer-img img {
   width: 100%;
@@ -1171,7 +1250,17 @@ body.active {
   aspect-ratio: 1/1;
   background: #fb3812;
   border-radius: 50%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 10%);
   filter: blur(100px);
+}
+@media (max-width: 992px) {
+  .footer-img::before {
+    width: 100%;
+    transform: translate(-50%, 20%) scale(0.8);
+    filter: blur(100px);
+  }
 }
 .footer-img::after {
   z-index: 2;

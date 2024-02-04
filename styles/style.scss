@@ -810,6 +810,8 @@ body.active {
 }
 
 .category {
+    position: relative;
+    z-index: 3;
     padding-bottom: 50px;
     overflow-x: hidden;
     &-title {
@@ -991,23 +993,49 @@ body.active {
 }
 
 .footer {
+    position: relative;
+    z-index: 2;
     background-color: #121212;
     padding: 120px 0;
+    @media (max-width: 480px) {
+        padding-bottom: 60px;
+    }
     &-wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: 992px) {
+            flex-direction: column-reverse;
+            gap: 80px;
+        }
     }
     &-box {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         max-width: 550px;
+        position: relative;
+        z-index: 2;
+        @media (max-width: 992px) {
+            align-items: center;
+        }
     }
     &-title {
         color: var(--white);
         font-size: 45px;
         font-weight: 200;
+        @media (max-width: 992px) {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            font-size: 36px;
+        }
+        @media (max-width: 480px) {
+            font-size: 28px;
+        }
+        @media (max-width: 360px) {
+            font-size: 24px;
+        }
     }
     &-subtitle {
         color: var(--white);
@@ -1016,6 +1044,16 @@ body.active {
         line-height: 28px;
         margin-top: 25px;
         max-width: 400px;
+        @media (max-width: 992px) {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+            margin-top: 35px;
+        }
+        @media (max-width: 480px) {
+            font-size: 12px;
+        }
     }
     &__btn {
         margin-top: 65px;
@@ -1054,10 +1092,25 @@ body.active {
             z-index: 1;
             background: linear-gradient(64.11deg, #e1ba6f 80%, #fff6d6 100%);
         }
+        @media (max-width: 768px) {
+            max-width: 300px;
+            padding: 24px 0;
+            font-size: 12px;
+        }
+        @media (max-width: 480px) {
+            padding: 18px 0;
+            max-width: 250px;
+            font-size: 11px;
+        }
     }
     &-img {
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
         position: relative;
+        z-index: 1;
+        @media (max-width: 480px) {
+            max-width: 280px;
+        }
         img {
             width: 100%;
             object-fit: contain;
@@ -1075,7 +1128,16 @@ body.active {
             aspect-ratio: 1/1;
             background: #fb3812;
             border-radius: 50%;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 10%);
             filter: blur(100px);
+            @media (max-width: 992px) {
+                width: 100%;
+                transform: translate(-50%, 20%) scale(0.8);
+                filter: blur(100px);
+            }
+            
         }
         &::after {
             z-index: 2;
