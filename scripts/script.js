@@ -1,4 +1,5 @@
 console.log('Welcome');
+console.log('Developed by Sarkor');
 
 
 const burgerOpen = document.querySelector('.nav__open');
