@@ -398,10 +398,10 @@ body.active {
             font-weight: 200;
             line-height: 87px;
             text-align: left;
+            position: relative;
             color: var(--red);
             @media (max-width: 1100px) {
                 font-size: 48px;
-                line-height: 54px;
                 margin-top: 25px;
             }
             @media (max-width: 768px) {
@@ -410,8 +410,52 @@ body.active {
             }
             @media (max-width: 480px) {
                 font-size: 22px;
-                line-height: 28px;
                 margin-top: 18px;
+            }
+            span {
+                display: block;
+                color: rgb(251, 56, 18);
+                font-family: Noto;
+                font-size: 24px;
+                font-weight: 200;
+                line-height: 33px;
+                text-align: left;
+                text-transform: uppercase;
+                max-width: 300px;
+                position: absolute;
+                top: 55%;
+                transform: translateY(-50%);
+                right: 20px;
+                background: var(--white);
+                a {
+                    color: inherit;
+                    text-decoration: underline;
+                }
+                @media (max-width: 1100px) {
+                    font-size: 20px;
+                    line-height: 30px;
+                    max-width: 240px;
+                }
+                @media (max-width: 992px) {
+                    top: 30%;
+                }
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    line-height: 26px;
+                    max-width: 150px;
+                }
+                @media (max-width: 576px) {
+                    position: relative;
+                    transform: none;
+                    right: 0;
+                    margin-top: 24px;
+                    max-width: 100%;
+                }
+                @media (max-width: 480px) {
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin-top: 14px;
+                }
             }
         }
     }
