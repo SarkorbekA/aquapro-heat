@@ -26,14 +26,25 @@ filter.addEventListener('click', () => {
     filter.classList.remove('active')
 })
 
+const navList = document.querySelectorAll('.header .nav__list-link');
+
+for (let i = 0; i < navList.length; i++) {
+    const el = navList[i];
+    el.addEventListener('click', () => {
+        burgerMenu.classList.remove('active')
+        body.classList.remove('active')
+        filter.classList.remove('active')
+    })
+}
+
 
 const swiper = new Swiper('.mySwiper', {
     loop: true,
 
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     spaceBetween: 15,
     navigation: {
         nextEl: '.swiper-button-next1',

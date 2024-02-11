@@ -12,7 +12,7 @@
 <body>
     <div class="filter"></div>
 
-    <header class="header">
+    <header id="main" class="header">
         <div class="container">
             <div class="header-wrapper">
                 <div class="header__left">
@@ -36,22 +36,22 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__list-item">
-                                <a href="#" class="nav__list-link">
+                                <a href="#main" class="nav__list-link">
                                     Главная
                                 </a>
                             </li>
                             <li class="nav__list-item">
-                                <a href="#" class="nav__list-link">
+                                <a href="#about" class="nav__list-link">
                                     О компании
                                 </a>
                             </li>
                             <li class="nav__list-item">
-                                <a href="#" class="nav__list-link">
+                                <a href="#catalog" class="nav__list-link">
                                     Каталог
                                 </a>
                             </li>
                             <li class="nav__list-item">
-                                <a href="#" class="nav__list-link">
+                                <a href="#contacts" class="nav__list-link">
                                     Контакты
                                 </a>
                             </li>
@@ -256,7 +256,7 @@
         </div>
     </main>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h2 class="about-title">
                 О компании
@@ -1627,15 +1627,63 @@
         </div>
     </footer>
 
-    <section class="contacts">
-        <h2 class="contacts-title">
-            Наши <span> контакты</span>
-        </h2>
-        <div class="contacts-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5989.915504546801!2d69.25653!3d41.353272!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIxJzExLjgiTiA2OcKwMTUnMjMuNSJF!5e0!3m2!1sru!2s!4v1707564200236!5m2!1sru!2s"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="contacts-title">
+                Наши <span> контакты</span>
+            </h2>
+            <a href="tel:+998991566600" class="contacts-phone">+998 99-156-66-00
+                <span class="contacts-schedule">Ежедневно с 9.00 до 23.00</span>
+            </a>
+            <div class="contacts-wrapper">
+                <div class="header__left">
+                    <a href="./index.html" class="header-logo">
+                        <img draggable="false" src="images/svg/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="nav__menu">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="#main" class="nav__list-link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#about" class="nav__list-link">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#catalog" class="nav__list-link">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#contacts" class="nav__list-link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__contact">
+                        <div class="header__social">
+                            <a href="https://t.me/aquapro_heat_solutions" class="header__social-link tg">
+                                <img src="images/png/tg.png" alt="tg">
+                            </a>
+                            <a href="https://www.instagram.com/aquaproheatsolutions/" class="header__social-link insta">
+                                <img src="images/png/insta.png" alt="insta">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5989.915504546801!2d69.25653!3d41.353272!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIxJzExLjgiTiA2OcKwMTUnMjMuNSJF!5e0!3m2!1sru!2s!4v1707564200236!5m2!1sru!2s"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
