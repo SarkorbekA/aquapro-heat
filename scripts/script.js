@@ -38,6 +38,44 @@ for (let i = 0; i < navList.length; i++) {
 }
 
 
+const dropdownNav = document.querySelector('.header .dropdown__link');
+const dropdownList = document.querySelector('.header .nav__dropdown');
+const dropdownListItem = document.querySelectorAll('.header .nav__dropdown-item');
+
+dropdownNav.addEventListener('click', () => {
+    dropdownList.classList.toggle('active');
+})
+
+for (let k = 0; k < dropdownListItem.length; k++) {
+    const el = dropdownListItem[k];
+    el.addEventListener('click', () => {
+        dropdownList.classList.remove('active');
+        burgerMenu.classList.remove('active')
+        body.classList.remove('active')
+        filter.classList.remove('active')
+    })
+}
+
+const dropdownNavFot = document.querySelector('.contacts .dropdown__link');
+const dropdownListFot = document.querySelector('.contacts .nav__dropdown');
+const dropdownListItemFot = document.querySelectorAll('.contacts .nav__dropdown-item');
+
+dropdownNavFot.addEventListener('click', () => {
+    dropdownListFot.classList.toggle('active');
+})
+
+for (let k = 0; k < dropdownListItemFot.length; k++) {
+    const el = dropdownListItemFot[k];
+    el.addEventListener('click', () => {
+        dropdownListFot.classList.remove('active');
+        burgerMenu.classList.remove('active')
+        body.classList.remove('active')
+        filter.classList.remove('active')
+    })
+}
+
+
+
 const swiper = new Swiper('.mySwiper', {
     loop: true,
 
