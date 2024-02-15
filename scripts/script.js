@@ -37,7 +37,6 @@ for (let i = 0; i < navList.length; i++) {
     })
 }
 
-
 const dropdownNav = document.querySelector('.header .dropdown__link');
 const dropdownList = document.querySelector('.header .nav__dropdown');
 const dropdownListItem = document.querySelectorAll('.header .nav__dropdown-item');
@@ -74,27 +73,29 @@ for (let k = 0; k < dropdownListItemFot.length; k++) {
     })
 }
 
-
-
 const swiper = new Swiper('.mySwiper', {
     loop: true,
-
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
     },
     spaceBetween: 15,
     navigation: {
         nextEl: '.swiper-button-next1',
         prevEl: '.swiper-button-prev1',
     },
-
 });
 
 var swiperCategory = new Swiper(".mySwiper2", {
     navigation: {
         nextEl: ".swiper-button-next2",
         prevEl: ".swiper-button-prev2",
+    },
+    pagination: {
+        el: ".swiper-pagination",
     },
     slidesPerView: 1,
     spaceBetween: 30,
