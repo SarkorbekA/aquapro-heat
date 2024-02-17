@@ -489,7 +489,7 @@ body.active {
   }
 }
 .header__slider-subtitle {
-  font-size: 60px;
+  font-size: 54px;
   font-weight: 200;
   line-height: 87px;
   height: 87px;
@@ -507,12 +507,15 @@ body.active {
   .header__slider-subtitle {
     font-size: 28px;
     line-height: 32px;
+    margin-top: 12px;
+  }
+  .header__slider-subtitle p {
     height: 32px;
   }
 }
 @media (max-width: 480px) {
   .header__slider-subtitle {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 18px;
   }
 }
@@ -527,7 +530,7 @@ body.active {
   text-transform: uppercase;
   max-width: 300px;
   position: absolute;
-  top: 55%;
+  top: -10px;
   transform: translateY(-50%);
   right: 20px;
   background: var(--white);
@@ -543,15 +546,10 @@ body.active {
     max-width: 240px;
   }
 }
-@media (max-width: 992px) {
-  .header__slider-subtitle span {
-    top: 30%;
-  }
-}
 @media (max-width: 768px) {
   .header__slider-subtitle span {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 22px;
     max-width: 150px;
   }
 }
@@ -560,6 +558,7 @@ body.active {
     position: relative;
     transform: none;
     right: 0;
+    top: 0;
     margin-top: 24px;
     max-width: 100%;
   }
@@ -576,7 +575,7 @@ body.active {
   width: 100%;
   overflow: visible;
   --swiper-pagination-color: var(--orange);
-  --swiper-pagination-bottom: 0;
+  --swiper-pagination-bottom: 10px;
   --swiper-pagination-bullet-size: 10px;
 }
 .header .swiper::before {
@@ -1603,12 +1602,12 @@ body.active {
 }
 @media (max-width: 992px) {
   .contacts__phone-box {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 @media (max-width: 400px) {
   .contacts__phone-box {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .contacts__phone span {

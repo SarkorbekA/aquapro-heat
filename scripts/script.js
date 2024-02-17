@@ -75,10 +75,10 @@ for (let k = 0; k < dropdownListItemFot.length; k++) {
 
 const swiper = new Swiper('.mySwiper', {
     loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: ".swiper-pagination",
     },

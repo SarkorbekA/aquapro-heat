@@ -462,7 +462,7 @@ body.active {
             }
         }
         &-subtitle {
-            font-size: 60px;
+            font-size: 54px;
             font-weight: 200;
             line-height: 87px;
             height: 87px;
@@ -476,10 +476,13 @@ body.active {
             @media (max-width: 768px) {
                 font-size: 28px;
                 line-height: 32px;
-                height: 32px;
+                margin-top: 12px;
+                p{
+                    height: 32px;
+                }
             }
             @media (max-width: 480px) {
-                font-size: 22px;
+                font-size: 20px;
                 margin-top: 18px;
             }
             span {
@@ -493,7 +496,7 @@ body.active {
                 text-transform: uppercase;
                 max-width: 300px;
                 position: absolute;
-                top: 55%;
+                top: -10px;
                 transform: translateY(-50%);
                 right: 20px;
                 background: var(--white);
@@ -506,18 +509,16 @@ body.active {
                     line-height: 30px;
                     max-width: 240px;
                 }
-                @media (max-width: 992px) {
-                    top: 30%;
-                }
                 @media (max-width: 768px) {
                     font-size: 14px;
-                    line-height: 26px;
+                    line-height: 22px;
                     max-width: 150px;
                 }
                 @media (max-width: 576px) {
                     position: relative;
                     transform: none;
                     right: 0;
+                    top: 0;
                     margin-top: 24px;
                     max-width: 100%;
                 }
@@ -550,12 +551,12 @@ body.active {
             }
         }
         --swiper-pagination-color: var(--orange);
-        --swiper-pagination-bottom: 0;
+        --swiper-pagination-bottom: 10px;
         --swiper-pagination-bullet-size: 10px;
         @media (max-width: 576px) {
             --swiper-pagination-bullet-size: 8px;
         }
-        &-wrapper{
+        &-wrapper {
             padding-bottom: 32px;
         }
         &-slide {
@@ -1437,10 +1438,10 @@ body.active {
             text-align: center;
             text-decoration: underline 1px;
             @media (max-width: 992px) {
-                font-size: 26px;
+                font-size: 24px;
             }
             @media (max-width: 400px) {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
         span {
