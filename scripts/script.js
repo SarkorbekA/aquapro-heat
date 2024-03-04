@@ -118,3 +118,22 @@ var swiperCategory = new Swiper(".mySwiper2", {
         }
     },
 });
+
+var swiperCategory = new Swiper(".mySwiper3", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        481: {
+            slidesPerView: 3,
+        }
+    },
+});
